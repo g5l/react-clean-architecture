@@ -10,6 +10,7 @@
     "plugin:cypress/recommended"
   ],
   "env": {
+    "es6": true,
     "cypress/globals": true
   },
   "plugins": [
@@ -17,7 +18,8 @@
     "cypress"
   ],
   "parserOptions": {
-    "project": "./tsconfig.json"
+    "project": "./tsconfig.json",
+    "ecmaVersion": "latest"
   },
   "rules": {
     "@typescript-eslint/consistent-type-definitions": "off",
